@@ -1,0 +1,97 @@
+.titulonome {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 400px 0px 200px;
+  gap: 100px;
+  text-align: center;
+}
+
+.titulonome h1 {
+  display: inline-block;
+  font-size: 70px;
+  padding: 10px 30px;
+  background: #171816;
+  border-radius: 50px;
+  position: relative;
+}
+
+.textop {
+  margin-top: 7px;
+  padding: 10px 15px;
+
+  display: inline-block;
+  background: #171816;
+  border-radius: 50px;
+}
+.titulonome h1::before {
+  content: "";
+  position: absolute;
+  background: #1c1b1b;
+  display: block;
+  width: 100vw;
+  height: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -444px;
+}
+
+/****-----------------*/
+.svgs-container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  margin-top: 90px;
+}
+
+.container-contatos {
+  display: flex;
+  gap: 30px;
+}
+.container-contatos img {
+  width: 50px;
+  fill: aliceblue;
+}
+.baixar {
+  display: flex;
+  gap: 10px;
+}
+.baixar img {
+  width: 60px;
+}
+
+/*********-----------------*/
+
+.msg {
+  font-size: 2.5rem;
+  display: inline-block;
+
+  position: relative;
+  border-right: 4px solid #3fc516;
+  overflow: hidden;
+  width: 13ch;
+  white-space: nowrap;
+  animation: blinkmarker 0, 5s infinite, typing 5s steps(13) infinite;
+}
+
+@keyframes blinkmarker {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 13ch;
+  }
+  60% {
+    width: 13ch;
+  }
+  100% {
+    width: 0;
+  }
+}

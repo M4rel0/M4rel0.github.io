@@ -1,0 +1,36 @@
+.sobre {
+  margin: 0 auto;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5.233rem;
+  padding-top: 7.625rem;
+}
+
+.sobre-texto {
+  font-size: 1.875rem;
+  line-height: 3.125rem;
+  color: #ecf1ea;
+  background: #171816;
+  border-radius: 200px;
+  padding: 33px 27px 33px 77px;
+  grid-column: 2 /-1;
+}
+.sobre-texto strong {
+  color: #648164;
+}
+.subtitulo {
+  grid-column: 1;
+  color: #fff;
+  font-size: 4rem;
+  padding: 0;
+  justify-self: center;
+  place-self: center;
+  background: #171816;
+  border-radius: 200px;
+  padding: 25px 30px;
+}
+
+strong:hover {
+  color: #77ac65;
+}
