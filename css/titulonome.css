@@ -172,6 +172,11 @@
   .titulonome {
     margin: 0 20%;
   }
+  .titulonome h1 {
+    font-size: 3.5rem;
+    border-radius: 30px;
+    padding: 5px;
+  }
   .titulonome h1::before {
     content: "";
     position: absolute;
@@ -195,10 +200,15 @@
   }
 }
 @media (width <= 600px) {
+  .titulonome h1 {
+    font-size: 3.5rem;
+    border-radius: 30px;
+    padding: 5px;
+  }
   #particles-js {
     position: absolute;
     width: 100%;
-    height: 800px;
+    height: 750px;
     top: 0;
     left: 0;
     z-index: 0;

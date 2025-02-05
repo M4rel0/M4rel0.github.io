@@ -4,7 +4,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5.233rem;
-  margin-top: 8%;
+
+  padding-top: 60px;
   margin-bottom: 8%;
 }
 .div-texto {
