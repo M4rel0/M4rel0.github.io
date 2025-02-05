@@ -2,8 +2,9 @@
   position: fixed;
   top: 0;
   left: 50%;
-  z-index: 1000;
   transform: translateX(-50%);
+  z-index: 1000;
+
   width: 100%;
   max-width: 1300px;
 
@@ -44,5 +45,48 @@ a:hover {
   .header-menu {
     margin-right: 20px;
     flex-wrap: nowrap;
+  }
+}
+@media (width <= 630px) {
+  .header-menu a {
+    font-size: 1rem;
+  }
+  .header-marca {
+    padding: 3% 10px 0px 7px;
+  }
+  .imgmarca {
+    min-width: 70px;
+  }
+}
+@media (width <= 490px) {
+  .header-menu {
+    font-size: 1.5rem;
+    padding: 2%;
+    gap: 0;
+    text-decoration: none;
+    color: #ecf1ea;
+  }
+  .nav {
+    display: block;
+  }
+  @media (width <= 400px) {
+    .nav {
+      max-width: 300px;
+    }
+    .header-menu {
+      padding: 0;
+      border-radius: 5px;
+    }
+    .header-menu li {
+      padding: 7px;
+      border-radius: 0px;
+    }
+    .header-menu a {
+      padding: 0;
+      border-radius: 0;
+    }
+    .imgmarca {
+      min-width: 40px;
+    }
   }
 }

@@ -37,3 +37,32 @@
 strong:hover {
   color: #77ac65;
 }
+/*----------------------*/
+
+@media (width <= 1400px) {
+  .sobre {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .div-texto {
+    margin: 2%;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .sobre-texto {
+    margin-top: 30px;
+  }
+}
+@media (width <= 401px) {
+  .sobre {
+    margin-top: 14%;
+    gap: 10px;
+  }
+  .subtitulo {
+    font-size: 3rem;
+  }
+}

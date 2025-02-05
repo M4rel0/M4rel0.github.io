@@ -5,6 +5,7 @@
   gap: 100px;
   text-align: center;
   margin-top: 120px;
+  position: relative;
 }
 
 .titulonome h1 {
@@ -19,7 +20,9 @@
 .textop {
   margin-top: 7px;
   padding: 10px 15px;
-
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: inline-block;
   background: #171816;
   border-radius: 50px;
@@ -117,4 +120,133 @@
 .titulonome a,
 .svgs-container a {
   pointer-events: auto;
+}
+/*-----------------------*/
+
+@media (width <= 1400px) {
+  .svgs-container {
+    justify-content: space-between;
+    margin: 0 6%;
+  }
+  #particles-js {
+    height: 835px;
+  }
+
+  .titulonome h1::before {
+    bottom: -340px;
+  }
+}
+@media (width <= 1200px) {
+  #particles-js {
+    height: 835px;
+  }
+
+  .titulonome h1::before {
+    bottom: -340px;
+  }
+}
+@media (width <= 900px) {
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 835px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: auto;
+  }
+  .titulonome h1::before {
+    content: "";
+    position: absolute;
+    background: #1c1b1b;
+    display: block;
+    width: 100vw;
+    height: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -340px;
+  }
+}
+
+@media (width <= 700px) {
+  .titulonome {
+    margin: 0 20%;
+  }
+  .titulonome h1::before {
+    content: "";
+    position: absolute;
+    background: #1c1b1b;
+    display: block;
+    width: 100vw;
+    height: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -340px;
+  }
+
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: auto;
+  }
+}
+@media (width <= 600px) {
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: auto;
+  }
+  .titulonome h1::before {
+    content: "";
+    position: absolute;
+    background: #1c1b1b;
+    display: block;
+    width: 100vw;
+    height: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -340px;
+  }
+}
+
+@media (width <= 400px) {
+  .titulonome h1 {
+    font-size: 3rem;
+    border-radius: 30px;
+    padding: 5px;
+  }
+  .msg {
+    font-size: 2rem;
+  }
+  .svgs-container {
+    margin-bottom: 120px;
+  }
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 740px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: auto;
+  }
+  .titulonome h1::before {
+    content: "";
+    position: absolute;
+    background: #1c1b1b;
+    display: block;
+    width: 100vw;
+    height: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -340px;
+  }
 }

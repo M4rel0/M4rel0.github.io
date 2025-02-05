@@ -2,14 +2,12 @@
   grid-template-columns: 1fr 60%;
   margin: 0 auto;
   max-width: 1400px;
-  /* width: 89.5%;*/
+
   display: grid;
 
   gap: 0.5rem;
   margin-bottom: 6%;
 
-  /*padding-top: 5%;
-  padding-bottom: 5%;*/
   position: relative;
 }
 
@@ -85,7 +83,7 @@
 .li-faculdade {
   padding: 30px 30px 30px 30px;
   background: #171816;
-
+  transition: background-color 0.3s linear;
   border-radius: 100%;
 }
 
@@ -124,9 +122,13 @@
   height: 5px;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -120px;
+  bottom: -3%;
 }
-.faculdade:hover {
+.li-faculdade:hover {
+  background: #314031;
+}
+#primeiro:hover,
+#segundo:hover {
   background: #314031;
 }
 /*----------------------------*/
@@ -153,5 +155,44 @@
   }
   .organizador {
     margin-top: 30px;
+  }
+}
+@media (width <= 400px) {
+  .subtitulo-formacao {
+    font-size: 3rem;
+  }
+  .formacao ::before {
+    content: "";
+    position: absolute;
+    background: #1c1b1b;
+    display: block;
+    width: 100%;
+    height: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3%;
+  }
+  .organizador {
+    display: block;
+    flex-basis: 0;
+  }
+  .faculdade-lista-formacao {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+  }
+  .li-faculdade {
+    flex-direction: row;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  #primeiro {
+    margin: 0;
+  }
+  #segundo {
+    margin: 0;
   }
 }

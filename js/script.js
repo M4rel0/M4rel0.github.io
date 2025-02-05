@@ -1,15 +1,37 @@
 console.log("Script.js está funcionando!");
-
 document.querySelectorAll(".card-projetos").forEach((card) => {
-  card.addEventListener("mouseover", function () {
-    this.classList.add("preview");
+  // Quando o mouse entra no card
+  card.addEventListener("mouseover", function (event) {
+    if (window.innerWidth >= 400) {
+      this.classList.add("preview");
+      // Recupera o src da imagem a partir de um atributo customizado, por exemplo "data-src"
+      const src = this.getAttribute("data-src");
+      if (src) {
+        showPreview(event, src);
+      }
+    }
   });
+
+  card.addEventListener("mousemove", function (event) {
+    if (window.innerWidth >= 400) {
+      const src = this.getAttribute("data-src");
+      if (src) {
+        showPreview(event, src);
+      }
+    }
+  });
+
   card.addEventListener("mouseout", function () {
-    this.classList.remove("preview");
+    if (window.innerWidth >= 400) {
+      this.classList.remove("preview");
+      hidePreview();
+    }
   });
 });
 
 function showPreview(event, src) {
+  if (window.innerWidth < 400) return;
+
   const preview = document.getElementById("preview");
   const previewImg = document.getElementById("preview-img");
 
@@ -29,7 +51,7 @@ function hidePreview() {
 document
   .getElementById("contact-form")
   .addEventListener("submit", async function (e) {
-    e.preventDefault(); // Impede o comportamento padrão do formulário (redirecionamento)
+    e.preventDefault();
 
     const form = e.target;
     const formData = new FormData(form);
@@ -45,10 +67,9 @@ document
       });
 
       if (response.ok) {
-        messageElement.style.display = "block"; // Exibe a mensagem de sucesso
-        form.reset(); // Limpa o formulário
+        messageElement.style.display = "block";
+        form.reset();
 
-        // Remove a mensagem após 3 segundos
         setTimeout(() => {
           messageElement.style.display = "none";
         }, 3000);
