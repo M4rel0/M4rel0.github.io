@@ -9,7 +9,7 @@
   margin-bottom: 8%;
 }
 .div-texto {
-  background: #171816;
+  background: #232421;
   border-radius: 200px;
   padding: 20px 10% 20px 10%;
   grid-column: 2 /-1;
@@ -30,7 +30,7 @@
   padding: 0;
   justify-self: center;
   place-self: center;
-  background: #171816;
+  background: #232421;
   border-radius: 200px;
   padding: 25px 30px;
 }

@@ -18,7 +18,7 @@
   padding: 0;
   justify-self: center;
   place-self: center;
-  background: #171816;
+  background: #232421;
   border-radius: 200px;
   padding: 25px 30px;
 }
@@ -50,7 +50,7 @@
   border-radius: 1000px;
   max-width: 36ch;
   padding: 30px;
-  background: #171816;
+  background: #232421;
   padding: 30px 30px 30px 30px;
   border-radius: 150px;
 }
@@ -82,7 +82,7 @@
 
 .li-faculdade {
   padding: 30px 30px 30px 30px;
-  background: #171816;
+  background: #232421;
   transition: background-color 0.3s linear;
   border-radius: 100%;
 }
