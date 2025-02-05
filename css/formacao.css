@@ -1,11 +1,15 @@
 .formacao {
+  grid-template-columns: 1fr 60%;
   margin: 0 auto;
   max-width: 1400px;
+  /* width: 89.5%;*/
   display: grid;
-  grid-template-columns: 1fr 905.42px;
+
   gap: 0.5rem;
-  margin-bottom: 7.625rem;
-  margin-top: 7.625rem;
+  margin-bottom: 6%;
+
+  /*padding-top: 5%;
+  padding-bottom: 5%;*/
   position: relative;
 }
 
@@ -23,35 +27,66 @@
 .faculdade-lista-formacao {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
 }
 
 .faculdade {
-  background: #171816;
-  padding: 30px 30px 30px 30px;
-  border-radius: 150px;
   display: flex;
   flex-direction: column;
   color: white;
   max-width: 194px;
   max-height: 194px;
+  justify-content: center;
+  align-items: center;
   transition: background-color 0.3s linear;
 }
-.faculdade + .faculdade {
-  margin-left: 39px;
+#primeiro {
+  margin-right: 10px;
+}
+#segundo {
+  height: 70%;
+}
+#primeiro,
+#segundo {
+  border-radius: 1000px;
+  max-width: 36ch;
+  padding: 30px;
+  background: #171816;
+  padding: 30px 30px 30px 30px;
+  border-radius: 150px;
+}
+#primeiro h3,
+#segundo h3 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-align: center;
+  height: 100%;
+}
+#segundo h3 {
+  margin: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
 }
 
-.faculdade:first-child {
-  display: inline-block;
-  max-width: 38ch;
-  margin-bottom: 40px;
-  padding: 30px;
-}
-#span1 {
-  margin-right: 150px;
-}
 .organizador {
-  width: 100%;
-  display: inline-block;
+  flex-basis: 50%;
+}
+
+.li-faculdade {
+  padding: 30px 30px 30px 30px;
+  background: #171816;
+
+  border-radius: 100%;
 }
 
 .faculdade-tipo {
@@ -67,10 +102,11 @@
 }
 
 .faculdade-instituicao {
+  display: inline-block;
   font-size: 1.1rem;
   color: #c6c6c6;
   margin-bottom: 5px;
-  justify-self: right;
+  justify-self: center;
 }
 
 .faculdade-tempo {
@@ -78,6 +114,7 @@
   color: #a3a3a3;
   font-weight: lighter;
 }
+
 .formacao ::before {
   content: "";
   position: absolute;
@@ -91,4 +128,30 @@
 }
 .faculdade:hover {
   background: #314031;
+}
+/*----------------------------*/
+@media (width <= 1400px) {
+  .formacao {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #primeiro {
+    justify-self: end;
+    margin-right: 10%;
+  }
+  #segundo {
+    margin-left: 10%;
+  }
+  .faculdade-lista-formacao {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .li-faculdade {
+    margin: 2%;
+  }
+  .organizador {
+    margin-top: 30px;
+  }
 }

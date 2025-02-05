@@ -4,17 +4,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5.233rem;
-  padding-top: 7.625rem;
+  margin-top: 8%;
+  margin-bottom: 8%;
 }
-
+.div-texto {
+  background: #171816;
+  border-radius: 200px;
+  padding: 20px 10% 20px 10%;
+  grid-column: 2 /-1;
+}
 .sobre-texto {
   font-size: 1.875rem;
   line-height: 3.125rem;
   color: #ecf1ea;
-  background: #171816;
-  border-radius: 200px;
-  padding: 33px 27px 33px 77px;
-  grid-column: 2 /-1;
+  margin: 30px;
 }
 .sobre-texto strong {
   color: #648164;

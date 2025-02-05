@@ -4,6 +4,7 @@
   padding: 278px 0px 270px;
   gap: 100px;
   text-align: center;
+  margin-top: 120px;
 }
 
 .titulonome h1 {
@@ -98,14 +99,13 @@
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 950px;
+  height: 940px;
   top: 0;
   left: 0;
   z-index: 0;
   pointer-events: auto;
 }
 
-.header,
 .titulonome,
 .svgs-container {
   position: relative;

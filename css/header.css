@@ -38,3 +38,11 @@
 a:hover {
   color: #9bbf7a;
 }
+/*------------------------*/
+
+@media (width <= 1400px) {
+  .header-menu {
+    margin-right: 20px;
+    flex-wrap: nowrap;
+  }
+}
