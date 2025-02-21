@@ -1,3 +1,4 @@
+@import url("./varies.css");
 .titulonome {
   margin: 0 auto;
   max-width: 1200px;
@@ -176,6 +177,7 @@
     font-size: 3.5rem;
     border-radius: 30px;
     padding: 5px;
+    max-width: 270px;
   }
   .titulonome h1::before {
     content: "";
@@ -201,10 +203,11 @@
 }
 @media (width <= 600px) {
   .titulonome h1 {
-    font-size: 3.5rem;
+    font-size: var(--font_size3);
     border-radius: 30px;
     padding: 5px;
   }
+
   #particles-js {
     position: absolute;
     width: 100%;
@@ -229,12 +232,12 @@
 
 @media (width <= 400px) {
   .titulonome h1 {
-    font-size: 3rem;
+    font-size: var(--font_size3);
     border-radius: 30px;
     padding: 5px;
   }
   .msg {
-    font-size: 2rem;
+    font-size: var(--font_size2);
   }
   .svgs-container {
     margin-bottom: 120px;

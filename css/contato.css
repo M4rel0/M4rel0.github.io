@@ -84,6 +84,9 @@ form {
   justify-self: right;
   border-radius: 5px;
 }
+form label {
+  margin-left: 14px;
+}
 
 label {
   margin-top: 20px;

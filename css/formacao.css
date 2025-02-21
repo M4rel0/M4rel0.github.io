@@ -90,13 +90,13 @@
 .faculdade-tipo {
   font-size: 0.875rem;
   color: #a3a3a3;
-  margin-bottom: 17px;
+  margin-bottom: 5%;
 }
 
 .faculdade-titulo {
   font-size: 1.5rem;
   font-weight: bolder;
-  margin-bottom: 17px;
+  margin-bottom: 5%;
 }
 
 .faculdade-instituicao {
@@ -157,6 +157,23 @@
     margin-top: 30px;
   }
 }
+@media (width <= 600px) {
+  .li-faculdade {
+    width: 123px;
+    height: 123px;
+  }
+  .faculdade {
+    width: 123px;
+    height: 123px;
+  }
+  #html {
+    margin-bottom: 1%;
+  }
+  .faculdade-tipo {
+    margin-bottom: 4%;
+  }
+}
+
 @media (width <= 400px) {
   .subtitulo-formacao {
     font-size: 3rem;

@@ -76,6 +76,7 @@
 .tecnologias-projetos a {
   text-decoration: none;
 }
+
 @media (width <= 401px) {
   .card-projetos {
     display: flex;
